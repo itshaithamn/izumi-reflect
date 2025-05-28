@@ -216,7 +216,8 @@ lazy val `izumi-reflect-thirdparty-boopickle-shaded` = crossProject(JVMPlatform,
       "3.3.5",
       "2.13.15",
       "2.12.20",
-      "2.11.12"
+      "2.11.12",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head
   )
@@ -224,7 +225,8 @@ lazy val `izumi-reflect-thirdparty-boopickle-shaded` = crossProject(JVMPlatform,
     crossScalaVersions := Seq(
       "3.3.5",
       "2.13.15",
-      "2.12.20"
+      "2.12.20",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head,
     coverageEnabled := false,
@@ -234,7 +236,8 @@ lazy val `izumi-reflect-thirdparty-boopickle-shaded` = crossProject(JVMPlatform,
     crossScalaVersions := Seq(
       "3.3.5",
       "2.13.15",
-      "2.12.20"
+      "2.12.20",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head,
     coverageEnabled := false,
@@ -454,7 +457,8 @@ lazy val `izumi-reflect` = crossProject(JVMPlatform, JSPlatform, NativePlatform)
       "3.3.5",
       "2.13.15",
       "2.12.20",
-      "2.11.12"
+      "2.11.12",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head
   )
@@ -462,7 +466,8 @@ lazy val `izumi-reflect` = crossProject(JVMPlatform, JSPlatform, NativePlatform)
     crossScalaVersions := Seq(
       "3.3.5",
       "2.13.15",
-      "2.12.20"
+      "2.12.20",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head,
     coverageEnabled := false,
@@ -472,7 +477,8 @@ lazy val `izumi-reflect` = crossProject(JVMPlatform, JSPlatform, NativePlatform)
     crossScalaVersions := Seq(
       "3.3.5",
       "2.13.15",
-      "2.12.20"
+      "2.12.20",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head,
     coverageEnabled := false,
@@ -534,7 +540,8 @@ lazy val `izumi-reflect-root-jvm` = (project in file(".agg/.agg-jvm"))
       "3.3.5",
       "2.13.15",
       "2.12.20",
-      "2.11.12"
+      "2.11.12",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head
   )
@@ -549,7 +556,8 @@ lazy val `izumi-reflect-root-js` = (project in file(".agg/.agg-js"))
       "3.3.5",
       "2.13.15",
       "2.12.20",
-      "2.11.12"
+      "2.11.12",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head
   )
@@ -564,7 +572,8 @@ lazy val `izumi-reflect-root-native` = (project in file(".agg/.agg-native"))
       "3.3.5",
       "2.13.15",
       "2.12.20",
-      "2.11.12"
+      "2.11.12",
+      "3.7.0"
     ),
     scalaVersion := crossScalaVersions.value.head
   )
@@ -598,7 +607,7 @@ lazy val `izumi-reflect-root` = (project in file("."))
       "-XDignore.symbol.file"
     ),
     crossScalaVersions := Nil,
-    scalaVersion := "3.3.5",
+    scalaVersion := "3.7.0",
     ThisBuild / organization := "dev.zio",
     sonatypeProfileName := "dev.zio",
     sonatypeSessionName := s"[sbt-sonatype] ${name.value} ${version.value} ${java.util.UUID.randomUUID}",
